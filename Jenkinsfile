@@ -12,14 +12,4 @@ agent any
      }
     }
    }
-  }
- def name='pipeline'
- Pipeline {
-   agent any
-     stages {
-       stage ('Deploy')
-         steps {
-           echo "Hello Deploy"
-         }
-       }
-    }   
+}
