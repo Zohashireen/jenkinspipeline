@@ -1,6 +1,6 @@
-pipeline {
+Pipeline {
 agent any
-  stage {
+  stages {
    stage ('Test') {
       steps {
         echo "Hello Test"
@@ -14,9 +14,9 @@ agent any
    }
   }
  def name='pipeline'
- pipeline {
+ Pipeline {
    agent any
-     stage {
+     stages {
        stage ('Deploy')
          steps {
            echo "Hello Deploy"
